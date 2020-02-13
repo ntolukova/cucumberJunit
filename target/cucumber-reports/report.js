@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/google.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/vytrack_features/google.feature");
 formatter.feature({
   "name": "Google feature verifications",
   "description": "  Agile Story: User stories, AC\n  Basically, we can pass here any additional information related to this feature file",
@@ -13,6 +13,9 @@ formatter.scenario({
       "name": "@smokeTest"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User is on Google homepage",
@@ -32,6 +35,9 @@ formatter.match({
   "location": "Google_StepDefs.user_should_see_title_contains_Google()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
