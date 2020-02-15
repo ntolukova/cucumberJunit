@@ -37,7 +37,6 @@ public class EtsySearchFunctionality {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = searchValue;
         Assert.assertTrue(actualTitle.contains(expectedTitle));
-        Assert.assertFalse();
     }
 
 }

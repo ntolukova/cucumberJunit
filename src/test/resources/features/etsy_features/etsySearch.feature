@@ -9,7 +9,7 @@ Feature: Etsy search functionality
   Scenario: Etsy search title verification
     When User searches for chair
     Then User should see chair in the title
- # @etsy
+  @etsy2
   Scenario: Etsy search title verification
     When User searches for "chair"
     Then User should see "Chair" in the title
