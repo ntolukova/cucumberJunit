@@ -15,6 +15,7 @@ public class WikiSearchFunctionality {
     public void user_is_on_Wikipedia_home_page() {
         Driver.getDriver().get(Config.getProperty("wikiURL"));
     }
+
     @When("User types {string} in the wiki search box")
     public void user_types_in_the_wiki_search_box(String searchValue) {
         wikiSearchPage.searchBox.sendKeys(searchValue);
@@ -29,7 +30,7 @@ public class WikiSearchFunctionality {
     public void user_sees_is_in_the_wiki_title(String searchValue) {
         String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = searchValue + " - Wikipedia";
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertEquals(expectedTitle, actualTitle);
     }
 
     @Then("User sees {string} is in the main header")

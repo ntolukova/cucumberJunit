@@ -38,12 +38,12 @@ public class Smartbear_StepDefs {
         Assert.assertTrue("The actual message does not contain expected message", actualWelcomeText.contains(expectedWelcomeText));
     }
 
-    @When("user gives the wrong password credential")
+  //  @When("user gives the wrong password credential")
     public void user_gives_the_wrong_password_credential() {
         smartbearLoginPage.smartbearPassword.sendKeys(Config.getProperty("smartbearWrongPassword"));
     }
 
-    @Then("user should see the appropriate text")
+  //  @Then("user should see the appropriate text")
     public void user_should_see_the_appropriate_text() {
         Assert.assertTrue("The wrong credential text is Not displayed!",smartbearLoginPage.wrongCredentialMessage.isDisplayed());
 

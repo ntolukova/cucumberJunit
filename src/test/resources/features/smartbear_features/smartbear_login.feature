@@ -8,13 +8,14 @@ Feature: Smartbear login feature verifications
   Username: Test
   Password: tester
   2- User should see "Welcome, Tester!" displayed when logged in.
+  @LoginSmartbear
   Scenario:as a user I should be able to login as an authenticated user
     Given user is on the SmartBear login page
     When user gives the correct username credential
     And user gives the correct password credential
     And user clicks on login button
     Then user should see the welcome text
-
+    @WrongPasswordLogin
     Scenario: as a user I should not be able to login when I enter not authenticated test data
       Given user is on the SmartBear login page
       When user gives the correct username credential

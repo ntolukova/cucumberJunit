@@ -24,5 +24,5 @@ Feature: Wikipedia search functionality verification
       | value          | expectedTitle  |
       | Eminem         | Eminem         |
       | Stephen King   | Stephen King   |
-      | Vladimir Putin | Vladimir Putin |
+      | Roza Otunbaeva | Roza Otunbaeva |
 
