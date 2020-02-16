@@ -1,16 +1,81 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/etsy_features/etsySearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/wikipedia_features/wiki.feature");
 formatter.feature({
-  "name": "Etsy search functionality",
-  "description": "  CBT-234 Agile Story: ...",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Etsy search title verification",
+  "name": "Wikipedia search functionality verification",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@etsy"
+      "name": "@Wiki"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "TC#27: Wikipedia Search Functionality Image Header Verification",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@PracticeScenarioOutline"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is on Wikipedia home page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User types \"\u003cvalue\u003e\" in the wiki search box",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User clicks on wiki search button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "User sees \"\u003cexpectedTitle\u003e\" is in the image header",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "Test data for image header verification",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "value",
+        "expectedTitle"
+      ]
+    },
+    {
+      "cells": [
+        "Eminem",
+        "Eminem"
+      ]
+    },
+    {
+      "cells": [
+        "Stephen King",
+        "Stephen King"
+      ]
+    },
+    {
+      "cells": [
+        "Vladimir Putin",
+        "Vladimir Putin"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "TC#27: Wikipedia Search Functionality Image Header Verification",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Wiki"
+    },
+    {
+      "name": "@PracticeScenarioOutline"
     }
   ]
 });
@@ -18,37 +83,163 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User is on Etsy home page",
+  "name": "User is on Wikipedia home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "EtsySearchFunctionality.user_is_on_Etsy_home_page()"
+  "location": "WikiSearchFunctionality.user_is_on_Wikipedia_home_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User searches for chair",
+  "name": "User types \"Eminem\" in the wiki search box",
   "keyword": "When "
 });
 formatter.match({
-  "location": "EtsySearchFunctionality.user_searches_for_chair()"
+  "location": "WikiSearchFunctionality.user_types_in_the_wiki_search_box(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should see chair in the title",
+  "name": "User clicks on wiki search button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_clicks_on_wiki_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User sees \"Eminem\" is in the image header",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "EtsySearchFunctionality.user_should_see_chair_in_the_title()"
+  "location": "WikiSearchFunctionality.user_sees_is_in_the_image_header(String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat step_definitions.etsy_StepDefs.EtsySearchFunctionality.user_should_see_chair_in_the_title(EtsySearchFunctionality.java:28)\r\n\tat ✽.User should see chair in the title(src/test/resources/features/etsy_features/etsySearch.feature:9)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC#27: Wikipedia Search Functionality Image Header Verification",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Wiki"
+    },
+    {
+      "name": "@PracticeScenarioOutline"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is on Wikipedia home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_is_on_Wikipedia_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User types \"Stephen King\" in the wiki search box",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_types_in_the_wiki_search_box(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on wiki search button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_clicks_on_wiki_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User sees \"Stephen King\" is in the image header",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_sees_is_in_the_image_header(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "TC#27: Wikipedia Search Functionality Image Header Verification",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Wiki"
+    },
+    {
+      "name": "@PracticeScenarioOutline"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is on Wikipedia home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_is_on_Wikipedia_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User types \"Vladimir Putin\" in the wiki search box",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_types_in_the_wiki_search_box(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on wiki search button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_clicks_on_wiki_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User sees \"Vladimir Putin\" is in the image header",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WikiSearchFunctionality.user_sees_is_in_the_image_header(String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

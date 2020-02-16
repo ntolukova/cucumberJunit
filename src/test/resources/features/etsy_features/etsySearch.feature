@@ -9,7 +9,13 @@ Feature: Etsy search functionality
   Scenario: Etsy search title verification
     When User searches for chair
     Then User should see chair in the title
+
   @etsy2
-  Scenario: Etsy search title verification
-    When User searches for "chair"
-    Then User should see "Chair" in the title
+  Scenario Outline: Etsy search title verification
+    When User searches for "<searchValue>"
+    Then User should see "<expectedTitle>" in the title
+    Examples:
+      | searchValue  | expectedTitle |
+      | chair        | Chair         |
+      | wooden spoon | Wooden spoon  |
+      | desk         | Desk          |
