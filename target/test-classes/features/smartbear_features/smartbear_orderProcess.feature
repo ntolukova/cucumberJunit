@@ -15,14 +15,14 @@ Feature: Smartbear order process
     And User enters "<cardNumber>" to card number
     And User enters "<expirationDate>" to expiration date
     And User clicks process button
-    Then User verifies "<costumerName>" is in the list
+    Then User verifies "<costumerExpectedName>" is in the list
     Examples: User fills out the form as followed from the table bellow:
-      | product     | quantity | customerName    | street      | city        | state | zip   | cardType | cardNumber   | expirationDate | costumerName    |
-      | MyMoney     | 1        | Ken Adams       | Kinzie st   | Chicago     | Il    | 60004 | Visa     | 313313133315 | 12/22          | Ken Adams       |
-      | FamilyAlbum | 4        | Joey Tribbiani  | State st    | Chicago     | Il    | 60656 | Visa     | 313313133315 | 11/22          | Joey Tribbiani  |
-      | ScreenSaver | 5        | Rachel Green    | Michigan st | Chicago     | Il    | 60656 | Visa     | 313313133315 | 11/22          | Rachel Green    |
-      | MyMoney     | 5        | Chandler Bing   | Erie st     | Chicago     | Il    | 60666 | Visa     | 464675855959 | 10/22          | Chandler Bing   |
-      | FamilyAlbum | 9        | Dr DrakeRamoray | Dale st     | Arl Hgths   | Il    | 60452 | Visa     | 137452095511 | 10/22          | Dr DrakeRamoray |
-      | ScreenSaver | 10       | Monica Geller   | Euclid ave  | Arl Hgths   | Il    | 60312 | Visa     | 874576638100 | 10/22          | Monica Geller   |
-      | MyMoney     | 3        | Ross Geller     | River rd    | Des Plaines | Il    | 60666 | Visa     | 383494859454 | 10/22          | Ross Geller     |
-      | MyMoney     | 1        | Ken Adams       | Kinzie st   | Chicago     | Il    | 60312 | Visa     | 949586573625 | 12/22          | Ken Adams       |
+      | product     | quantity | customerName    | street      | city        | state | zip   | cardType | cardNumber   | expirationDate | costumerExpectedName |
+      | MyMoney     | 1        | Ken Adams       | Kinzie st   | Chicago     | Il    | 60004 | Visa     | 313313133315 | 12/22          | Ken Adams            |
+      | FamilyAlbum | 4        | Joey Tribbiani  | State st    | Chicago     | Il    | 60656 | Visa     | 313313133315 | 11/22          | Joey Tribbiani       |
+      | ScreenSaver | 5        | Rachel Green    | Michigan st | Chicago     | Il    | 60656 | Visa     | 313313133315 | 11/22          | Rachel Green         |
+      | MyMoney     | 5        | Chandler Bing   | Erie st     | Chicago     | Il    | 60666 | Visa     | 464675855959 | 10/22          | Chandler Bing        |
+      | FamilyAlbum | 9        | Dr DrakeRamoray | Dale st     | Arl Hgths   | Il    | 60452 | Visa     | 137452095511 | 10/22          | Dr DrakeRamoray      |
+      | ScreenSaver | 10       | Monica Geller   | Euclid ave  | Arl Hgths   | Il    | 60312 | Visa     | 874576638100 | 10/22          | Monica Geller        |
+      | MyMoney     | 3        | Ross Geller     | River rd    | Des Plaines | Il    | 60666 | Visa     | 383494859454 | 10/22          | Ross Geller          |
+      | MyMoney     | 1        | Ken Adams       | Kinzie st   | Chicago     | Il    | 60312 | Visa     | 949586573625 | 12/22          | Ken Adams            |

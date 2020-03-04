@@ -1,4 +1,4 @@
-@Wiki
+@wiki
 Feature: Wikipedia search functionality verification
 
   Scenario:TC#25: Wikipedia Search Functionality Title Verification
