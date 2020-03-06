@@ -1,0 +1,9 @@
+[INFO ] 2020-03-05 19:50:05.561 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven
+[INFO ] 2020-03-05 19:50:05.748 [main] Log - Header 1 is taken
+[INFO ] 2020-03-05 19:50:07.053 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-05 19:50:07.185 [main] Log - Header 2 is taken
+[INFO ] 2020-03-05 19:52:34.118 [main] Log - Scenario start point: user should be able to compare the headers
+[INFO ] 2020-03-05 19:52:47.658 [main] Log - user is on: https://dzone.com/articles/gradle-vs-maven
+[INFO ] 2020-03-05 19:52:47.826 [main] Log - Header 1 is taken
+[INFO ] 2020-03-05 19:52:48.977 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
+[INFO ] 2020-03-05 19:52:49.029 [main] Log - Header 2 is taken

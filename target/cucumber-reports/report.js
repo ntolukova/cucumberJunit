@@ -65,7 +65,7 @@ formatter.match({
   "location": "Dzone_stepDefs.user_should_be_able_to_compare_the_headers()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Gradle vs. Maven]\u003e but was:\u003c[API Security Weekly: Issue #71]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat step_definitions.Dzone_stepDefs.user_should_be_able_to_compare_the_headers(Dzone_stepDefs.java:31)\r\n\tat ✽.user should be able to compare the headers(src/test/resources/features/wikipedia_features/Dzone.feature:9)\r\n",
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Gradle vs. Maven]\u003e but was:\u003c[API Security Weekly: Issue #71]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat step_definitions.Dzone_stepDefs.user_should_be_able_to_compare_the_headers(Dzone_stepDefs.java:32)\r\n\tat ✽.user should be able to compare the headers(src/test/resources/features/wikipedia_features/Dzone.feature:9)\r\n",
   "status": "failed"
 });
 formatter.embedding("image/png", "embedded0.png");

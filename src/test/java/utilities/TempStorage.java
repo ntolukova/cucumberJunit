@@ -12,4 +12,7 @@ public class TempStorage {
     public static String getData (String key){
         return data.get(key);
     }
+ public static void clear(){
+        data.clear();
+    }
 }
