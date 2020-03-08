@@ -1,15 +1,21 @@
 package step_definitions.wiki_StepDefs;
 
-import utilities.Log;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class LogTest {
     public static void main(String[] args) {
+        ExtentHtmlReporter configs = new ExtentHtmlReporter("./extentReport/report.html");
+        configs.config().setTheme(Theme.STANDARD);
+        ExtentReports reports = new ExtentReports();
+        reports.attachReporter(configs);
         System.out.println("Test started");
-        Log.start("Header comparison");
-        Log.info("start of the test");
-        System.out.println("go to amazon");
-        Log.info("User in on the main page");
-        Log.info("login to amazon");
-
+        ExtentTest extentTest = reports.createTest("Google Search");
+        extentTest.pass("Passed!");
+        extentTest.fail("Failed!");
+        reports.flush();
+        System.out.println("Completed!");
     }
 }

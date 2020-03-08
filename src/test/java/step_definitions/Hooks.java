@@ -6,6 +6,7 @@ import cucumber.api.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
+import utilities.ExtentReport;
 import utilities.Log;
 import utilities.TempStorage;
 
@@ -13,8 +14,9 @@ public class Hooks {
     @Before
     public void setUp(Scenario scenario){
         //Anything that we want to run before scenario
-        TempStorage.clear();
-        Log.start(scenario.getName());
+        TempStorage.clear(); //for data storage
+        Log.start(scenario.getName());// for the log4j
+        ExtentReport.startTest(scenario.getName());
 
     }
     @After
@@ -25,8 +27,12 @@ public class Hooks {
         if(scenario.isFailed()){
             byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot,"image/png");
+            ExtentReport.fail();
 
         }
-      //  Driver.getDriver().quit();
+        else{
+            ExtentReport.pass();
+        }
+        Driver.quitDriver();
     }
 }

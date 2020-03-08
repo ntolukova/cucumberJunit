@@ -7,3 +7,41 @@
 [INFO ] 2020-03-05 19:52:47.826 [main] Log - Header 1 is taken
 [INFO ] 2020-03-05 19:52:48.977 [main] Log - user is on: https://dzone.com/articles/api-security-weekly-issue-71
 [INFO ] 2020-03-05 19:52:49.029 [main] Log - Header 2 is taken
+[INFO ] 2020-03-05 21:00:40.985 [main] Log - Scenario start point: TC#25: Wikipedia Search Functionality Title Verification
+[INFO ] 2020-03-05 21:00:57.196 [main] Log - Scenario start point: TC#26: Wikipedia Search Functionality Header Verification
+[INFO ] 2020-03-05 21:00:57.211 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:00:57.227 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:00:57.258 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:04:23.358 [main] Log - Scenario start point: TC#25: Wikipedia Search Functionality Title Verification
+[INFO ] 2020-03-05 21:04:38.484 [main] Log - Scenario start point: TC#26: Wikipedia Search Functionality Header Verification
+[INFO ] 2020-03-05 21:04:38.549 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:04:38.553 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:04:38.561 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:05:00.442 [main] Log - Scenario start point: TC#25: Wikipedia Search Functionality Title Verification
+[INFO ] 2020-03-05 21:05:15.659 [main] Log - Scenario start point: TC#26: Wikipedia Search Functionality Header Verification
+[INFO ] 2020-03-05 21:05:15.722 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:05:15.737 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:05:15.753 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:05:56.850 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:06:11.381 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:06:11.412 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:10:45.866 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:11:01.539 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:11:01.571 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:11:48.035 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:12:01.702 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:12:03.462 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:12:48.154 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:13:03.547 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-05 21:13:16.971 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-07 17:01:30.637 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-07 17:01:48.899 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-07 17:02:02.853 [main] Log - Scenario start point: TC#27: Wikipedia Search Functionality Image Header Verification
+[INFO ] 2020-03-08 11:47:10.922 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:47:25.342 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:47:38.412 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:47:51.336 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:48:04.115 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:48:17.296 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:48:30.155 [main] Log - Scenario start point: User should be able to place order with different data sets
+[INFO ] 2020-03-08 11:48:42.852 [main] Log - Scenario start point: User should be able to place order with different data sets
