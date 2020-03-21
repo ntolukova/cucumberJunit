@@ -1,7 +1,7 @@
 package API_Student_Model;
 
-import io.cucumber.datatable.dependency.com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import io.cucumber.datatable.dependency.com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
@@ -10,6 +10,7 @@ import lombok.Data;
 public class Company {
     private int companyId;
     private String companyName;
+    private String startDate;
+    private Address address;
 
-    Address address = new Address();
 }

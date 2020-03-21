@@ -1,4 +1,4 @@
-package API_Student_Model;
+package API_Teacher_Module;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -7,7 +7,10 @@ import lombok.Data;
 @Data
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Address {
-    private int addressId;
-    private int zipCode;
+public class Subject {
+
+    private String name;
+    private int batch;
+    private int year;
+
 }
