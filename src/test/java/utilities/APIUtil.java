@@ -7,7 +7,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Assert;
 
 public class APIUtil {
 
@@ -20,7 +19,7 @@ public class APIUtil {
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.get(uri);
         System.out.println(response.asString());
-        Assert.assertEquals("GET API HIT FAILED!", 200, response.statusCode());
+        System.out.println("STATUS: " + response.statusCode());
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
@@ -46,11 +45,43 @@ public class APIUtil {
         }
         Response response = RestAssured.given().contentType(ContentType.JSON).body(bodyJSON).when().post(uri);
         System.out.println(response.asString());
-        Assert.assertEquals("POST API HIT FAILED!", 200, response.statusCode());
+        System.out.println("STATUS: " + response.statusCode());
         try {
             responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
-        } catch (Exception j) {
-            j.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
+
+    public static void hitDELETE(String resource) {
+        String uri = Config.getProperty("baseURL") + resource;
+        Response response = RestAssured.delete(uri);
+        System.out.println("STATUS: " + response.statusCode());
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
+        } catch (Exception e) {
+            System.err.println("Warning!\nResponse could not map properly with Jackson Library!");
+        }
+
+    }
+    public static void hitPUT(String resource, RequestBody body) {
+        String uri = Config.getProperty("baseURL") + resource;
+        ObjectMapper objectMapper = new ObjectMapper();
+        String bodyJSON = "";
+        try {
+            bodyJSON = objectMapper.writeValueAsString(body);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Response response = RestAssured.given().contentType(ContentType.JSON).body(bodyJSON).when().put(uri);
+        System.out.println(response.asString());
+        System.out.println("STATUS: " + response.statusCode());
+        try {
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

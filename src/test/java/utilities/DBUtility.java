@@ -41,8 +41,8 @@ public class DBUtility {
     }
 
     public static void close() throws SQLException {
-        connection.close();
-        statement.close();
         resultSet.close();
+        statement.close();
+        connection.close();
     }
 }

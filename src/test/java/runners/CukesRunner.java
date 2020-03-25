@@ -11,7 +11,7 @@ import utilities.ExtentReport;
         plugin = {"html:target/cucumber-reports", "json:target/cukesreport.json"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@orderProcess",
+        tags = "@TeacherDelete",
         dryRun = false
 )
 

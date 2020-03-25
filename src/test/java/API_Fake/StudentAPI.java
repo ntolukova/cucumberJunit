@@ -1,6 +1,6 @@
-package API_Student_Model;
+package API_Fake;
 
-import ApiModels.ResponseBody;
+import ApiModels.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

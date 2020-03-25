@@ -1,6 +1,7 @@
-package API_Teacher_Module;
+package API_Fake;
 
 import ApiModels.ResponseBody;
+import ApiModels.Teacher;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

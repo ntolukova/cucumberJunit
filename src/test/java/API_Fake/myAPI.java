@@ -1,4 +1,4 @@
-package fakeAPI;
+package API_Fake;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

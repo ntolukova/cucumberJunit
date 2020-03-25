@@ -1,5 +1,6 @@
-package API_Teacher_Module;
+package ApiModels;
 
+import API_Teacher_Module.Subject;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

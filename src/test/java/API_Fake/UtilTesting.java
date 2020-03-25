@@ -1,4 +1,4 @@
-package fakeAPI;
+package API_Fake;
 
 import org.junit.Test;
 import utilities.APIUtil;

@@ -1,4 +1,4 @@
-package API_Student_Model;
+package API_Fake;
 
 import ApiModels.RequestBody;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
